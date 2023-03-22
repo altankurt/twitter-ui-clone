@@ -607,16 +607,16 @@ video {
   height: 3.5rem;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-4 {
   height: 1rem;
 }
 
 .h-screen {
   height: 100vh;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .w-10 {
@@ -708,10 +708,6 @@ video {
 .bg-brandColor {
   --tw-bg-opacity: 1;
   background-color: rgb(29 161 242 / var(--tw-bg-opacity));
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .p-3 {
