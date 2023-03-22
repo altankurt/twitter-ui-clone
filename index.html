@@ -4,14 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/output.css" />
+    <link rel="stylesheet" href="./css/output.css" />
     <link rel="icon" href="./assets/icons/favicon.svg" />
 
     <title>Twitter-Clone</title>
   </head>
-  <body>
-    <h1 class="bg-darkGray text-3xl font-bold text-brandColor underline">
-      Test!
-    </h1>
+  <body class="mx-auto max-w-screen-xl bg-bgColor">
+    <div class="container flex h-screen">
+      <!-- navbar -->
+      <header
+        class="flex w-3/12 flex-col justify-between border-r-2 border-borderColor text-xl font-bold"
+      >
+        <div>
+          <!-- logo -->
+          <h1 class="m-1 h-12 w-12 rounded-full p-3 hover:bg-darkGray">
+            <a href="#">
+              <img src="./assets/icons/logo.svg" alt="logo-icon" />
+            </a>
+          </h1>
+          <!-- nav-bar -->
+          <nav class="text-xl text-textColor">
+            <a id="nav-home" href="#">
+              <div class="nav-button">
+                <img src="./assets/icons/menu/home-fill.svg" alt="home-icon" />
+                <span class="nav-header-text">Home</span>
+              </div>
+            </a>
+            <a id="nav-explore" href="#">
+              <div class="nav-button">
+                <img src="./assets/icons/menu/explore.svg" alt="explore-icon" />
+                <span class="nav-header-text">Explore</span>
+              </div>
+            </a>
+            <a id="nav-notifications" href="#">
+              <div class="nav-button">
+                <img
+                  src="./assets/icons/menu/notification.svg"
+                  alt="notifications-icon"
+                />
+                <span class="nav-header-text">Notifications</span>
+              </div>
+            </a>
+            <a id="nav-messages" href="#">
+              <div class="nav-button">
+                <img
+                  src="./assets/icons/menu/messages.svg"
+                  alt="messages-icon"
+                />
+                <span class="nav-header-text">Messages</span>
+              </div>
+            </a>
+            <a id="nav-bookmarks" href="#">
+              <div class="nav-button">
+                <img
+                  src="./assets/icons/menu/bookmark.svg"
+                  alt="bookmarks-icon"
+                />
+                <span class="nav-header-text">Bookmarks</span>
+              </div>
+            </a>
+            <a id="nav-lists" href="#">
+              <div class="nav-button">
+                <img src="./assets/icons/menu/lists.svg" alt="lists-icon" />
+                <span class="nav-header-text">Lists</span>
+              </div>
+            </a>
+            <a id="nav-profile" href="#">
+              <div class="nav-button">
+                <img src="./assets/icons/menu/profile.svg" alt="profile-icon" />
+                <span class="nav-header-text">Profile</span>
+              </div>
+            </a>
+            <a id="nav-more" href="#">
+              <div class="nav-button">
+                <img src="./assets/icons/menu/more.svg" alt="more-icon" />
+                <span class="nav-header-text">More</span>
+              </div>
+            </a>
+          </nav>
+        </div>
+    </div>
   </body>
 </html>
