@@ -12,4 +12,8 @@
   .nav-header-text {
     @apply mr-4 max-lg:hidden;
   }
+
+  .tweet-editor-logo {
+    @apply rounded-full p-2 hover:bg-darkGray;
+  }
 }
