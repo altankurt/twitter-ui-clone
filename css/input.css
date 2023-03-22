@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-button {
+    @apply my-1 flex w-fit gap-5 rounded-full p-3 hover:bg-darkGray;
+  }
+}
+
+@layer utilities {
+  .nav-header-text {
+    @apply mr-4 max-lg:hidden;
+  }
+
+  .tweet-editor-logo {
+    @apply rounded-full p-2 hover:bg-darkGray;
+  }
+}
