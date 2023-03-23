@@ -10,7 +10,7 @@
     <title>Twitter-Clone</title>
   </head>
   <body class="mx-auto max-w-screen-xl bg-bgColor">
-    <div class="container flex h-screen">
+    <div class="container flex h-screen overflow-hidden">
       <!-- navbar -->
       <header
         class="flex w-3/12 flex-col justify-between border-r-2 border-borderColor text-xl font-bold"
@@ -134,54 +134,255 @@
             />
           </div>
         </section>
-        <!-- tweet-editor -->
-        <section class="flex border-b-2 border-borderColor">
-          <div class="flex items-start justify-center pt-5 pl-4">
-            <figure class="h-10 w-10">
+        <div class="scrollbar-hide h-full overflow-y-auto">
+          <!-- tweet-editor -->
+          <section class="timeline-border">
+            <div class="flex items-start justify-center pt-5 pl-4">
+              <figure class="h-10 w-10">
+                <img
+                  class="rounded-full"
+                  src="./assets/images/user-profil.png"
+                  alt=""
+                />
+              </figure>
+            </div>
+            <!-- textarea -->
+            <div class="w-full items-center justify-center p-5">
+              <textarea
+                placeholder="What’s happening?"
+                class="scrollbar-hide inline-block h-16 w-full resize-none overflow-y-auto bg-bgColor text-textColor outline-none placeholder:text-lightGray"
+              ></textarea>
+              <!-- logo-and-button -->
+              <div class="flex items-center justify-between">
+                <div class="flex">
+                  <div class="tweet-editor-logo">
+                    <img src="./assets/icons/editor/media.svg" alt="media" />
+                  </div>
+                  <div class="tweet-editor-logo">
+                    <img src="./assets/icons/editor/gif.svg" alt="gif" />
+                  </div>
+                  <div class="tweet-editor-logo">
+                    <img
+                      src="./assets/icons/editor/question.svg"
+                      alt="question"
+                    />
+                  </div>
+                  <div class="tweet-editor-logo">
+                    <img src="./assets/icons/editor/emoji.svg" alt="emoji" />
+                  </div>
+                </div>
+
+                <button
+                  class="w-3/12 rounded-full bg-brandColor py-3 px-8 text-textColor hover:bg-brandHoverColor"
+                >
+                  <a href="#">
+                    <span>Tweet</span>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- tweet-1 -->
+          <article class="timeline-border py-3">
+            <!-- profile-pic -->
+            <figure class="ml-3 mt-2 h-12 max-w-[48px]">
               <img
                 class="rounded-full"
                 src="./assets/images/user-profil.png"
+                alt="user-profil-pic"
+              />
+            </figure>
+            <!-- tweet-area -->
+            <div class="ml-3 mt-2">
+              <!-- user-name -->
+              <div class="flex items-center">
+                <div class="font-bold text-textColor">
+                  <a href="#">Altan Kurt</a>
+                </div>
+                <div class="flex text-lightGray">
+                  <div class="px-1 text-lightGray">
+                    <a href="#">@aaltankurt</a>
+                  </div>
+                  <div>
+                    <span>·</span>
+                  </div>
+                  <div class="px-1">
+                    <a href="#">1h</a>
+                  </div>
+                </div>
+              </div>
+              <!-- tweet-text -->
+              <div class="pr-5 leading-tight text-textColor">
+                <p>
+                  I had gone out to take photos early in the morning, and it was
+                  my lucky day!
+                </p>
+              </div>
+              <!-- tweet-pic -->
+              <figure class="pt-3 pr-5">
+                <img src="./assets/images/tw-pic-2.png" alt="tweet-pic" />
+              </figure>
+              <!-- reaction-icon -->
+              <div class="flex w-full justify-evenly pt-2 pr-5">
+                <!-- reply-icon -->
+                <a href="#">
+                  <img src="./assets/icons/tweet/reply.svg" alt="reply-icon" />
+                </a>
+                <!-- retweet-icon -->
+                <a href="#">
+                  <img
+                    src="./assets/icons/tweet/retweet.svg"
+                    alt="retweet-icon"
+                  />
+                </a>
+                <!-- like-icon -->
+                <a href="#">
+                  <img src="./assets/icons/tweet/like.svg" alt="like-icon" />
+                </a>
+                <!-- share-icon -->
+                <a href="#">
+                  <img src="./assets/icons/tweet/share.svg" alt="share-icon" />
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- tweet-2 -->
+          <article class="timeline-border py-3">
+            <!-- profile-pic -->
+            <figure class="ml-3 mt-2 h-12 max-w-[48px]">
+              <img
+                class="rounded-full"
+                src="./assets/images/tw-github.png"
+                alt="github-profile-pic"
+              />
+            </figure>
+            <!-- tweet-area -->
+            <div class="ml-3 mt-2">
+              <!-- user-name -->
+              <div class="flex items-center">
+                <div class="font-bold text-textColor">
+                  <a href="#">GitHub</a>
+                </div>
+                <div class="flex text-lightGray">
+                  <div class="px-1 text-lightGray">
+                    <a href="#">@github</a>
+                  </div>
+                  <div>
+                    <span>·</span>
+                  </div>
+                  <div class="px-1">
+                    <a href="#">1h</a>
+                  </div>
+                </div>
+              </div>
+              <!-- tweet-text -->
+              <div class="pr-5 leading-tight text-textColor">
+                <p>
+                  How are you protecting your organization from security
+                  threats? Join us at
+                  <span class="cursor-pointer text-brandColor"
+                    >#OfficialCyberSummit</span
+                  >
+                  to learn how GitHub can help.
+                </p>
+              </div>
+              <!-- tweet-pic -->
+              <figure class="pt-3 pr-5">
+                <img src="./assets/images/tw-pic-1.png" alt="tweet-pic" />
+              </figure>
+              <!-- reaction-icon -->
+              <div class="flex w-full justify-evenly pt-2 pr-5">
+                <!-- reply-icon -->
+                <a href="#">
+                  <img src="./assets/icons/tweet/reply.svg" alt="reply-icon" />
+                </a>
+                <!-- retweet-icon -->
+                <a href="#">
+                  <img
+                    src="./assets/icons/tweet/retweet.svg"
+                    alt="retweet-icon"
+                  />
+                </a>
+                <!-- like-icon -->
+                <a href="#">
+                  <img src="./assets/icons/tweet/like.svg" alt="like-icon" />
+                </a>
+                <!-- share-icon -->
+                <a href="#">
+                  <img src="./assets/icons/tweet/share.svg" alt="share-icon" />
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- tweet-3 -->
+          <article class="timeline-border py-3">
+            <!-- profile-pic -->
+            <figure class="ml-3 mt-2 h-12 max-w-[48px]">
+              <img
+                class="rounded-full"
+                src="./assets/images/tw-deno.png"
                 alt=""
               />
             </figure>
-          </div>
-          <!-- textarea -->
-          <div class="w-full items-center justify-center p-5">
-            <textarea
-              placeholder="What’s happening?"
-              class="inline-block h-16 w-full resize-none overflow-hidden bg-bgColor text-textColor outline-none placeholder:text-lightGray"
-            ></textarea>
-            <!-- logo-and-button -->
-            <div class="flex items-center justify-between">
-              <div class="flex">
-                <div class="tweet-editor-logo">
-                  <img src="./assets/icons/editor/media.svg" alt="media" />
+            <!-- tweet-area -->
+            <div class="ml-3 mt-2">
+              <!-- user-name -->
+              <div class="flex items-center">
+                <div class="font-bold text-textColor">
+                  <a href="#">Deno</a>
                 </div>
-                <div class="tweet-editor-logo">
-                  <img src="./assets/icons/editor/gif.svg" alt="gif" />
-                </div>
-                <div class="tweet-editor-logo">
-                  <img
-                    src="./assets/icons/editor/question.svg"
-                    alt="question"
-                  />
-                </div>
-                <div class="tweet-editor-logo">
-                  <img src="./assets/icons/editor/emoji.svg" alt="emoji" />
+                <div class="flex text-lightGray">
+                  <div class="px-1 text-lightGray">
+                    <a href="#">@deno_land</a>
+                  </div>
+                  <div>
+                    <span>·</span>
+                  </div>
+                  <div class="px-1">
+                    <a href="#">1h</a>
+                  </div>
                 </div>
               </div>
-
-              <button
-                class="w-3/12 rounded-full bg-brandColor py-3 px-8 text-textColor hover:bg-brandHoverColor"
-              >
+              <!-- tweet-text -->
+              <div class="pr-5 leading-tight text-textColor">
+                <p>
+                  Got a question for one of our engineers? Come ask it at our
+                  next Office Hours — tomorrow, Friday 9am PT, on our Discord!
+                  <br />
+                  RVSP ->
+                  <a class="text-brandColor" href="https://discord.gg/deno"
+                    >discord.gg/deno</a
+                  >
+                </p>
+              </div>
+              <!-- reaction-icon -->
+              <div class="flex w-full justify-evenly pt-2 pr-5">
+                <!-- reply-icon -->
                 <a href="#">
-                  <span>Tweet</span>
+                  <img src="./assets/icons/tweet/reply.svg" alt="reply-icon" />
                 </a>
-              </button>
+                <!-- retweet-icon -->
+                <a href="#">
+                  <img
+                    src="./assets/icons/tweet/retweet.svg"
+                    alt="retweet-icon"
+                  />
+                </a>
+                <!-- like-icon -->
+                <a href="#">
+                  <img src="./assets/icons/tweet/like.svg" alt="like-icon" />
+                </a>
+                <!-- share-icon -->
+                <a href="#">
+                  <img src="./assets/icons/tweet/share.svg" alt="share-icon" />
+                </a>
+              </div>
             </div>
-          </div>
-        </section>
+          </article>
+        </div>
       </main>
+      <!-- sidebar -->
+      <aside class="w-3/12"></aside>
     </div>
   </body>
 </html>

@@ -16,4 +16,19 @@
   .tweet-editor-logo {
     @apply rounded-full p-2 hover:bg-darkGray;
   }
+
+  .timeline-border {
+    @apply flex border-b-2 border-borderColor;
+  }
+
+  /* For Webkit-based browsers (Chrome, Safari and Opera) */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
