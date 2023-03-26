@@ -631,6 +631,10 @@ video {
   height: 100vh;
 }
 
+.max-h-72 {
+  max-height: 18rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -663,10 +667,6 @@ video {
   width: 100%;
 }
 
-.max-w-\[48px\] {
-  max-width: 48px;
-}
-
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -697,10 +697,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .overflow-hidden {
@@ -738,16 +734,17 @@ video {
   background-color: rgb(29 161 242 / var(--tw-bg-opacity));
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-1 {
@@ -765,6 +762,10 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -777,16 +778,12 @@ video {
   padding-right: 1.25rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
 }
 
 .text-base {
@@ -811,36 +808,13 @@ video {
   font-weight: 600;
 }
 
-.font-thin {
-  font-weight: 100;
-}
-
 .leading-none {
   line-height: 1;
 }
 
-.leading-3 {
-  line-height: .75rem;
-}
-
-.leading-4 {
-  line-height: 1rem;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
-}
-
-.leading-6 {
-  line-height: 1.5rem;
-}
-
-.leading-5 {
-  line-height: 1.25rem;
-}
-
-.leading-tight {
-  line-height: 1.25;
+.text-brandColor {
+  --tw-text-opacity: 1;
+  color: rgb(29 161 242 / var(--tw-text-opacity));
 }
 
 .text-lightGray {
@@ -851,11 +825,6 @@ video {
 .text-textColor {
   --tw-text-opacity: 1;
   color: rgb(225 232 237 / var(--tw-text-opacity));
-}
-
-.text-brandColor {
-  --tw-text-opacity: 1;
-  color: rgb(29 161 242 / var(--tw-text-opacity));
 }
 
 .outline-none {
@@ -883,11 +852,33 @@ video {
   background-color: rgb(45 55 65 / var(--tw-bg-opacity));
 }
 
+.profile-pic {
+  margin-left: 0.75rem;
+  margin-top: 0.5rem;
+  height: 3rem;
+  max-width: 48px;
+}
+
 .timeline-border {
   display: flex;
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(47 51 54 / var(--tw-border-opacity));
+}
+
+.tweet-text {
+  padding-right: 1.25rem;
+  line-height: 1.25;
+  --tw-text-opacity: 1;
+  color: rgb(225 232 237 / var(--tw-text-opacity));
+}
+
+.reaction-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-top: 0.5rem;
+  padding-right: 1.25rem;
 }
 
 /* For Webkit-based browsers (Chrome, Safari and Opera) */

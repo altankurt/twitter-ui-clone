@@ -119,7 +119,7 @@
         </button>
       </header>
       <!-- timeline -->
-      <main class="w-6/12 border-r-2 border-borderColor">
+      <main class="w-6/12 border-r-2 border-borderColor pb-14">
         <!-- timeline-bar -->
         <section
           class="flex h-14 items-center justify-between border-b-2 border-borderColor pl-4 pr-1 text-xl font-bold text-textColor"
@@ -185,7 +185,7 @@
           <!-- tweet-1 -->
           <article class="timeline-border py-3">
             <!-- profile-pic -->
-            <figure class="ml-3 mt-2 h-12 max-w-[48px]">
+            <figure class="profile-pic">
               <img
                 class="rounded-full"
                 src="./assets/images/user-profil.png"
@@ -212,7 +212,7 @@
                 </div>
               </div>
               <!-- tweet-text -->
-              <div class="pr-5 leading-tight text-textColor">
+              <div class="tweet-text">
                 <p>
                   I had gone out to take photos early in the morning, and it was
                   my lucky day!
@@ -220,10 +220,16 @@
               </div>
               <!-- tweet-pic -->
               <figure class="pt-3 pr-5">
-                <img src="./assets/images/tw-pic-2.png" alt="tweet-pic" />
+                <a href="#">
+                  <img
+                    class="max-h-72 w-full object-cover"
+                    src="./assets/images/tw-pic-2.png"
+                    alt="tweet-pic"
+                  />
+                </a>
               </figure>
-              <!-- reaction-icon -->
-              <div class="flex w-full justify-evenly pt-2 pr-5">
+              <!-- reaction-icons -->
+              <div class="reaction-icons">
                 <!-- reply-icon -->
                 <a href="#">
                   <img src="./assets/icons/tweet/reply.svg" alt="reply-icon" />
@@ -249,7 +255,7 @@
           <!-- tweet-2 -->
           <article class="timeline-border py-3">
             <!-- profile-pic -->
-            <figure class="ml-3 mt-2 h-12 max-w-[48px]">
+            <figure class="profile-pic">
               <img
                 class="rounded-full"
                 src="./assets/images/tw-github.png"
@@ -276,7 +282,7 @@
                 </div>
               </div>
               <!-- tweet-text -->
-              <div class="pr-5 leading-tight text-textColor">
+              <div class="tweet-text">
                 <p>
                   How are you protecting your organization from security
                   threats? Join us at
@@ -288,10 +294,12 @@
               </div>
               <!-- tweet-pic -->
               <figure class="pt-3 pr-5">
-                <img src="./assets/images/tw-pic-1.png" alt="tweet-pic" />
+                <a href="#">
+                  <img src="./assets/images/tw-pic-1.png" alt="tweet-pic" />
+                </a>
               </figure>
-              <!-- reaction-icon -->
-              <div class="flex w-full justify-evenly pt-2 pr-5">
+              <!-- reaction-icons -->
+              <div class="reaction-icons">
                 <!-- reply-icon -->
                 <a href="#">
                   <img src="./assets/icons/tweet/reply.svg" alt="reply-icon" />
@@ -317,7 +325,7 @@
           <!-- tweet-3 -->
           <article class="timeline-border py-3">
             <!-- profile-pic -->
-            <figure class="ml-3 mt-2 h-12 max-w-[48px]">
+            <figure class="profile-pic">
               <img
                 class="rounded-full"
                 src="./assets/images/tw-deno.png"
@@ -344,7 +352,7 @@
                 </div>
               </div>
               <!-- tweet-text -->
-              <div class="pr-5 leading-tight text-textColor">
+              <div class="tweet-text">
                 <p>
                   Got a question for one of our engineers? Come ask it at our
                   next Office Hours — tomorrow, Friday 9am PT, on our Discord!
@@ -355,8 +363,8 @@
                   >
                 </p>
               </div>
-              <!-- reaction-icon -->
-              <div class="flex w-full justify-evenly pt-2 pr-5">
+              <!-- reaction-icons -->
+              <div class="reaction-icons">
                 <!-- reply-icon -->
                 <a href="#">
                   <img src="./assets/icons/tweet/reply.svg" alt="reply-icon" />
@@ -381,6 +389,7 @@
           </article>
         </div>
       </main>
+
       <!-- sidebar -->
       <aside class="w-3/12"></aside>
     </div>
