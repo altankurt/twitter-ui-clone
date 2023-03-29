@@ -13,7 +13,7 @@
     <div class="container flex h-screen overflow-hidden">
       <!-- navbar -->
       <header
-        class="flex w-3/12 flex-col justify-between border-r-2 border-borderColor text-xl font-bold"
+        class="flex w-3/12 flex-col justify-between border-r-2 border-borderColor text-xl font-normal"
       >
         <div>
           <!-- logo -->
@@ -84,7 +84,7 @@
           </nav>
           <!-- tweet-button -->
           <button
-            class="my-1 w-8/12 rounded-full bg-brandColor py-3 px-8 text-textColor hover:bg-brandHoverColor"
+            class="my-1 w-8/12 rounded-full bg-brandColor py-3 px-8 text-lg font-bold text-textColor hover:bg-brandHoverColor"
           >
             <a href="#">
               <span>Tweet</span>
@@ -100,12 +100,12 @@
               <img
                 class="rounded-full"
                 src="./assets/images/user-profil.png"
-                alt=""
+                alt="profile-pic"
               />
             </figure>
 
             <div class="mx-3 flex flex-col text-base leading-none">
-              <div class="font-semibold text-textColor">Altan Kurt</div>
+              <div class="font-bold text-textColor">Altan Kurt</div>
               <div class="font-normal text-lightGray">@aaltankurt</div>
             </div>
           </div>
@@ -113,7 +113,7 @@
             <img
               class="flex h-4 w-4"
               src="./assets/icons/common/arrow-bottom.svg"
-              alt=""
+              alt="arrow-bottom-icon"
             />
           </div>
         </button>
@@ -127,10 +127,12 @@
           <div>
             <span>Latest Tweets</span>
           </div>
-          <div class="h-12 w-12 rounded-full p-3 hover:bg-darkGray">
+          <div
+            class="h-12 w-12 cursor-pointer rounded-full p-3 hover:bg-darkGray"
+          >
             <img
               src="./assets/icons/common/timeline-prop.svg"
-              alt="timeline-prop"
+              alt="timeline-prop-icon"
             />
           </div>
         </section>
@@ -142,12 +144,14 @@
                 <img
                   class="rounded-full"
                   src="./assets/images/user-profil.png"
-                  alt=""
+                  alt="profil-pic"
                 />
               </figure>
             </div>
             <!-- textarea -->
-            <div class="w-full items-center justify-center p-5">
+            <div
+              class="w-full items-center justify-center p-5 text-xl font-normal"
+            >
               <textarea
                 placeholder="What’s happening?"
                 class="scrollbar-hide inline-block h-16 w-full resize-none overflow-y-auto bg-bgColor text-textColor outline-none placeholder:text-lightGray"
@@ -156,24 +160,30 @@
               <div class="flex items-center justify-between">
                 <div class="flex">
                   <div class="tweet-editor-logo">
-                    <img src="./assets/icons/editor/media.svg" alt="media" />
+                    <img
+                      src="./assets/icons/editor/media.svg"
+                      alt="media-icon"
+                    />
                   </div>
                   <div class="tweet-editor-logo">
-                    <img src="./assets/icons/editor/gif.svg" alt="gif" />
+                    <img src="./assets/icons/editor/gif.svg" alt="gif-icon" />
                   </div>
                   <div class="tweet-editor-logo">
                     <img
                       src="./assets/icons/editor/question.svg"
-                      alt="question"
+                      alt="question-icon"
                     />
                   </div>
                   <div class="tweet-editor-logo">
-                    <img src="./assets/icons/editor/emoji.svg" alt="emoji" />
+                    <img
+                      src="./assets/icons/editor/emoji.svg"
+                      alt="emoji-icon"
+                    />
                   </div>
                 </div>
 
                 <button
-                  class="w-3/12 rounded-full bg-brandColor py-3 px-8 text-textColor hover:bg-brandHoverColor"
+                  class="w-3/12 rounded-full bg-brandColor py-3 px-8 text-base font-bold text-textColor hover:bg-brandHoverColor"
                 >
                   <a href="#">
                     <span>Tweet</span>
@@ -312,8 +322,9 @@
                   />
                 </a>
                 <!-- like-icon -->
-                <a href="#">
+                <a class="flex" href="#">
                   <img src="./assets/icons/tweet/like.svg" alt="like-icon" />
+                  <span class="px-2 text-sm">12</span>
                 </a>
                 <!-- share-icon -->
                 <a href="#">
@@ -329,7 +340,7 @@
               <img
                 class="rounded-full"
                 src="./assets/images/tw-deno.png"
-                alt=""
+                alt="deno-profile-pic"
               />
             </figure>
             <!-- tweet-area -->
@@ -394,13 +405,13 @@
       <aside class="ml-7 w-3/12">
         <!-- search-button -->
         <button
-          class="mt-1 flex w-full rounded-full border-2 border-darkGray bg-darkGray"
+          class="mt-1 mb-3 flex w-full rounded-full border-2 border-darkGray bg-darkGray"
         >
           <input
             class="py-3 pl-3"
             type="image"
             src="./assets/icons/common/search.svg"
-            alt=""
+            alt="search-icon"
           />
           <input
             class="place-light rounded-full bg-darkGray p-3 text-textColor outline-none"
@@ -409,12 +420,14 @@
           />
         </button>
         <!-- trends -->
-        <div class="mt-3">
+        <div class="rounded-2xl">
           <div
-            class="flex justify-between p-4 text-xl font-bold text-textColor"
+            class="flex justify-between px-4 py-3 text-xl font-bold text-textColor"
           >
             <h2>Twitter Trends</h2>
-            <img src="./assets/icons/common/options.svg" alt="" />
+            <a href="#">
+              <img src="./assets/icons/common/options.svg" alt="options-icon" />
+            </a>
           </div>
 
           <ul>
@@ -489,10 +502,12 @@
               </div>
             </li>
             <hr class="border-1 border-borderColor" />
+            <li
+              class="cursor-pointer rounded-b-2xl p-3 text-brandColor hover:bg-darkGray"
+            >
+              <a href="#">Show More</a>
+            </li>
           </ul>
-          <div class="m-3 text-brandColor">
-            <a href="#">Show More</a>
-          </div>
         </div>
       </aside>
     </div>

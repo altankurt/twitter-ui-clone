@@ -564,17 +564,19 @@ video {
 }
 
 .trends-button {
-  margin-left: 1rem;
   display: flex;
+  cursor: pointer;
   justify-content: space-between;
+  padding-left: 1rem;
+}
+
+.trends-button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 55 65 / var(--tw-bg-opacity));
 }
 
 .m-1 {
   margin: 0.25rem;
-}
-
-.m-3 {
-  margin: 0.75rem;
 }
 
 .mx-3 {
@@ -597,12 +599,12 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.ml-3 {
-  margin-left: 0.75rem;
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .ml-7 {
@@ -617,8 +619,8 @@ video {
   margin-top: 0.25rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .inline-block {
@@ -733,8 +735,17 @@ video {
   overflow-y: auto;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-b-2xl {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 .border-2 {
@@ -787,13 +798,19 @@ video {
   padding: 1.25rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-8 {
@@ -808,6 +825,10 @@ video {
 
 .pb-14 {
   padding-bottom: 3.5rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
 }
 
 .pl-4 {
@@ -830,13 +851,19 @@ video {
   padding-top: 1.25rem;
 }
 
-.pl-3 {
-  padding-left: 0.75rem;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -850,10 +877,6 @@ video {
 
 .font-normal {
   font-weight: 400;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .leading-none {
@@ -922,11 +945,12 @@ video {
 }
 
 .reaction-icons {
+  margin-top: 0.75rem;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  padding-top: 0.5rem;
-  padding-right: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(110 118 125 / var(--tw-text-opacity));
 }
 
 .trends-button-list {
@@ -941,7 +965,7 @@ video {
 }
 
 .trending {
-  padding-top: 0.5rem;
+  padding-top: 0.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
@@ -949,7 +973,7 @@ video {
 }
 
 .tweet-counter {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
