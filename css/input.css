@@ -14,7 +14,7 @@
 
 @layer utilities {
   .nav-header-text {
-    @apply mr-4 max-lg:hidden;
+    @apply mr-4 hidden xl:block;
   }
 
   .tweet-editor-logo {
