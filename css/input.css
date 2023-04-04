@@ -8,13 +8,13 @@
   }
 
   .trends-button {
-    @apply ml-4 flex justify-between;
+    @apply flex cursor-pointer justify-between pl-4 hover:bg-darkGray;
   }
 }
 
 @layer utilities {
   .nav-header-text {
-    @apply mr-4 max-lg:hidden;
+    @apply mr-4 hidden xl:block;
   }
 
   .tweet-editor-logo {
@@ -34,7 +34,7 @@
   }
 
   .reaction-icons {
-    @apply flex w-full justify-evenly pt-2 pr-5;
+    @apply mt-3 flex w-full justify-evenly text-lightGray;
   }
 
   .trends-button-list {
@@ -42,11 +42,11 @@
   }
 
   .trending {
-    @apply pt-2 text-sm text-lightGray;
+    @apply pt-1 text-sm text-lightGray;
   }
 
   .tweet-counter {
-    @apply pb-2 text-sm text-lightGray;
+    @apply pb-1 text-sm text-lightGray;
   }
 
   /* For Webkit-based browsers (Chrome, Safari and Opera) */

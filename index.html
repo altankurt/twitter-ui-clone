@@ -10,24 +10,35 @@
     <title>Twitter-Clone</title>
   </head>
   <body class="mx-auto max-w-screen-xl bg-bgColor">
-    <div class="container flex h-screen overflow-hidden">
+    <div
+      class="container relative mx-auto flex h-screen flex-col sm:flex-row sm:overflow-hidden"
+    >
       <!-- navbar -->
       <header
-        class="flex w-3/12 flex-col justify-between border-r-2 border-borderColor text-xl font-bold"
+        class="box-content flex w-1/2 flex-row-reverse items-center justify-between border-borderColor pl-3 text-xl font-normal sm:box-border sm:w-8/12 sm:flex-col sm:items-end sm:border-r-2 sm:px-3 lg:w-3/12 xl:items-stretch"
       >
-        <div>
+        <div class="flex sm:flex-col">
           <!-- logo -->
-          <h1 class="m-1 h-12 w-12 rounded-full p-3 hover:bg-darkGray">
+          <h1
+            class="flex flex-row justify-end sm:my-1 sm:h-12 sm:w-12 sm:flex-col sm:rounded-full sm:p-3 sm:py-3 sm:hover:bg-darkGray"
+          >
             <a href="#">
               <img src="./assets/icons/logo.svg" alt="logo-icon" />
             </a>
           </h1>
           <!-- nav-bar -->
-          <nav class="text-xl text-textColor">
+          <nav
+            class="fixed bottom-0 left-0 flex w-full justify-around bg-bgColor text-xl text-textColor sm:relative sm:bottom-auto sm:flex-col md:left-auto"
+          >
             <a id="nav-home" href="#">
               <div class="nav-button">
                 <img src="./assets/icons/menu/home-fill.svg" alt="home-icon" />
                 <span class="nav-header-text">Home</span>
+              </div>
+            </a>
+            <a id="nav-search" href="#">
+              <div class="nav-button block md:hidden">
+                <img src="./assets/icons/menu/search.svg" alt="search-icon" />
               </div>
             </a>
             <a id="nav-explore" href="#">
@@ -54,7 +65,7 @@
                 <span class="nav-header-text">Messages</span>
               </div>
             </a>
-            <a id="nav-bookmarks" href="#">
+            <a id="nav-bookmarks" href="#" class="hidden sm:block">
               <div class="nav-button">
                 <img
                   src="./assets/icons/menu/bookmark.svg"
@@ -63,19 +74,19 @@
                 <span class="nav-header-text">Bookmarks</span>
               </div>
             </a>
-            <a id="nav-lists" href="#">
+            <a id="nav-lists" href="#" class="hidden sm:block">
               <div class="nav-button">
                 <img src="./assets/icons/menu/lists.svg" alt="lists-icon" />
                 <span class="nav-header-text">Lists</span>
               </div>
             </a>
-            <a id="nav-profile" href="#">
+            <a id="nav-profile" href="#" class="hidden sm:block">
               <div class="nav-button">
                 <img src="./assets/icons/menu/profile.svg" alt="profile-icon" />
                 <span class="nav-header-text">Profile</span>
               </div>
             </a>
-            <a id="nav-more" href="#">
+            <a id="nav-more" href="#" class="hidden sm:block">
               <div class="nav-button">
                 <img src="./assets/icons/menu/more.svg" alt="more-icon" />
                 <span class="nav-header-text">More</span>
@@ -84,96 +95,111 @@
           </nav>
           <!-- tweet-button -->
           <button
-            class="my-1 w-8/12 rounded-full bg-brandColor py-3 px-8 text-textColor hover:bg-brandHoverColor"
+            class="fixed bottom-16 right-5 h-14 w-14 rounded-full bg-brandColor text-lg font-bold text-textColor hover:bg-brandHoverColor sm:relative sm:bottom-0 sm:right-0 sm:h-12 sm:w-12 xl:my-1 xl:w-10/12 xl:py-3 xl:px-8"
           >
             <a href="#">
-              <span>Tweet</span>
+              <span class="hidden xl:block">Tweet</span>
+              <img
+                class="p-4 sm:block sm:p-3 xl:hidden"
+                src="./assets/icons/common/res-tweet.svg"
+                alt="responsive-tweet-icon"
+              />
             </a>
           </button>
         </div>
-        <!-- account-menu -->
+        <!-- account-button -->
         <button
-          class="my-3 flex w-3/4 items-center justify-between rounded-full p-3 hover:bg-darkGray"
+          class="my-1 flex items-center justify-between rounded-full hover:bg-none xl:w-10/12 xl:p-3 xl:hover:bg-darkGray"
         >
           <div class="flex items-center">
             <figure class="h-10 w-10">
               <img
                 class="rounded-full"
                 src="./assets/images/user-profil.png"
-                alt=""
+                alt="profile-pic"
               />
             </figure>
 
-            <div class="mx-3 flex flex-col text-base leading-none">
-              <div class="font-semibold text-textColor">Altan Kurt</div>
+            <div class="mx-3 hidden flex-col text-base leading-none xl:flex">
+              <div class="font-bold text-textColor">Altan Kurt</div>
               <div class="font-normal text-lightGray">@aaltankurt</div>
             </div>
           </div>
-          <div>
+          <div class="hidden xl:block">
             <img
               class="flex h-4 w-4"
               src="./assets/icons/common/arrow-bottom.svg"
-              alt=""
+              alt="arrow-bottom-icon"
             />
           </div>
         </button>
       </header>
       <!-- timeline -->
-      <main class="w-6/12 border-r-2 border-borderColor pb-14">
+      <main class="border-r-2 border-borderColor pb-14 xl:w-6/12">
         <!-- timeline-bar -->
         <section
-          class="flex h-14 items-center justify-between border-b-2 border-borderColor pl-4 pr-1 text-xl font-bold text-textColor"
+          class="hidden h-14 items-center justify-between border-b-2 border-borderColor pl-4 pr-1 text-xl font-bold text-textColor sm:flex"
         >
           <div>
             <span>Latest Tweets</span>
           </div>
-          <div class="h-12 w-12 rounded-full p-3 hover:bg-darkGray">
+          <div
+            class="h-12 w-12 cursor-pointer rounded-full p-3 hover:bg-darkGray"
+          >
             <img
               src="./assets/icons/common/timeline-prop.svg"
-              alt="timeline-prop"
+              alt="timeline-prop-icon"
             />
           </div>
         </section>
         <div class="scrollbar-hide h-full overflow-y-auto">
           <!-- tweet-editor -->
-          <section class="timeline-border">
+          <section class="timeline-border max-sm:hidden">
             <div class="flex items-start justify-center pt-5 pl-4">
               <figure class="h-10 w-10">
                 <img
                   class="rounded-full"
                   src="./assets/images/user-profil.png"
-                  alt=""
+                  alt="profil-pic"
                 />
               </figure>
             </div>
             <!-- textarea -->
-            <div class="w-full items-center justify-center p-5">
+            <div
+              class="flex w-full flex-col justify-center p-5 text-xl font-normal"
+            >
               <textarea
                 placeholder="What’s happening?"
-                class="scrollbar-hide inline-block h-16 w-full resize-none overflow-y-auto bg-bgColor text-textColor outline-none placeholder:text-lightGray"
+                class="scrollbar-hide block h-16 w-full resize-none overflow-y-auto bg-bgColor text-textColor outline-none placeholder:text-lightGray"
               ></textarea>
               <!-- logo-and-button -->
               <div class="flex items-center justify-between">
                 <div class="flex">
                   <div class="tweet-editor-logo">
-                    <img src="./assets/icons/editor/media.svg" alt="media" />
+                    <img
+                      src="./assets/icons/editor/media.svg"
+                      alt="media-icon"
+                    />
                   </div>
                   <div class="tweet-editor-logo">
-                    <img src="./assets/icons/editor/gif.svg" alt="gif" />
+                    <img src="./assets/icons/editor/gif.svg" alt="gif-icon" />
                   </div>
                   <div class="tweet-editor-logo">
                     <img
                       src="./assets/icons/editor/question.svg"
-                      alt="question"
+                      alt="question-icon"
                     />
                   </div>
                   <div class="tweet-editor-logo">
-                    <img src="./assets/icons/editor/emoji.svg" alt="emoji" />
+                    <img
+                      src="./assets/icons/editor/emoji.svg"
+                      alt="emoji-icon"
+                    />
                   </div>
                 </div>
 
                 <button
-                  class="w-3/12 rounded-full bg-brandColor py-3 px-8 text-textColor hover:bg-brandHoverColor"
+                  class="w-3/12 rounded-full bg-brandColor py-3 px-8 text-base font-bold text-textColor hover:bg-brandHoverColor"
                 >
                   <a href="#">
                     <span>Tweet</span>
@@ -312,8 +338,9 @@
                   />
                 </a>
                 <!-- like-icon -->
-                <a href="#">
+                <a class="flex" href="#">
                   <img src="./assets/icons/tweet/like.svg" alt="like-icon" />
+                  <span class="px-2 text-sm">12</span>
                 </a>
                 <!-- share-icon -->
                 <a href="#">
@@ -329,7 +356,7 @@
               <img
                 class="rounded-full"
                 src="./assets/images/tw-deno.png"
-                alt=""
+                alt="deno-profile-pic"
               />
             </figure>
             <!-- tweet-area -->
@@ -391,16 +418,16 @@
       </main>
 
       <!-- sidebar -->
-      <aside class="ml-7 w-3/12">
+      <aside class="ml-7 w-3/12 max-lg:hidden">
         <!-- search-button -->
         <button
-          class="mt-1 flex w-full rounded-full border-2 border-darkGray bg-darkGray"
+          class="mt-1 mb-3 flex w-full rounded-full border-2 border-darkGray bg-darkGray"
         >
           <input
             class="py-3 pl-3"
             type="image"
             src="./assets/icons/common/search.svg"
-            alt=""
+            alt="search-icon"
           />
           <input
             class="place-light rounded-full bg-darkGray p-3 text-textColor outline-none"
@@ -409,12 +436,16 @@
           />
         </button>
         <!-- trends -->
-        <div class="mt-3">
-          <div
-            class="flex justify-between p-4 text-xl font-bold text-textColor"
-          >
-            <h2>Twitter Trends</h2>
-            <img src="./assets/icons/common/options.svg" alt="" />
+        <div class="rounded-2xl">
+          <div class="flex justify-between text-xl font-bold text-textColor">
+            <h2 class="m-1 p-3">Trends</h2>
+            <a href="#">
+              <img
+                class="m-1 rounded-full p-3 hover:bg-darkGray"
+                src="./assets/icons/common/options.svg"
+                alt="options-icon"
+              />
+            </a>
           </div>
 
           <ul>
@@ -489,10 +520,12 @@
               </div>
             </li>
             <hr class="border-1 border-borderColor" />
+            <li
+              class="cursor-pointer rounded-b-2xl p-3 text-brandColor hover:bg-darkGray"
+            >
+              <a href="#">Show More</a>
+            </li>
           </ul>
-          <div class="m-3 text-brandColor">
-            <a href="#">Show More</a>
-          </div>
         </div>
       </aside>
     </div>
