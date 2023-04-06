@@ -613,21 +613,6 @@ video {
   margin-right: auto;
 }
 
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.my-\[10px\] {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -640,10 +625,6 @@ video {
 
 .mb-3 {
   margin-bottom: 0.75rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
 }
 
 .ml-7 {
@@ -704,10 +685,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.max-h-72 {
-  max-height: 18rem;
 }
 
 .w-1\/2 {
@@ -840,11 +817,6 @@ video {
   background-color: rgb(45 55 65 / var(--tw-bg-opacity));
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -855,16 +827,6 @@ video {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .px-8 {
@@ -893,14 +855,6 @@ video {
   padding-right: 0.25rem;
 }
 
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -911,11 +865,6 @@ video {
 
 .text-lg {
   font-size: 19px;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -987,29 +936,6 @@ video {
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(47 51 54 / var(--tw-border-opacity));
-}
-
-.tweet-username {
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-}
-
-.tweet-text {
-  padding-right: 1.25rem;
-  font-size: 15px;
-  line-height: 1.25;
-  --tw-text-opacity: 1;
-  color: rgb(225 232 237 / var(--tw-text-opacity));
-}
-
-.reaction-icons {
-  margin-top: 0.75rem;
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  --tw-text-opacity: 1;
-  color: rgb(110 118 125 / var(--tw-text-opacity));
 }
 
 .trends-button-list {
