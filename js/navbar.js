@@ -1,10 +1,11 @@
-// get all navigation buttons
+// select navigation buttons
 const navButtons = document.querySelectorAll(".nav-button");
 
-// reset the style of all navigation buttons
+// reset the properties of the navigation buttons
 const resetNavButtons = () => {
   navButtons.forEach((btn) => {
-    // set font weight to 400 and replace image source with non-filled version
+    btn.classList.remove("active");
+
     btn.style.fontWeight = 400;
     const img = btn.querySelector("img");
     if (img) {
@@ -12,9 +13,11 @@ const resetNavButtons = () => {
     }
   });
 };
-// set the style of the clicked navigation button
+
+// make the selected button active
 const setActiveNavButton = (button) => {
-  // set font weight to 700 and replace image source with filled version
+  button.classList.add("active");
+
   button.style.fontWeight = 700;
   const img = button.querySelector("img");
   if (img) {
@@ -22,10 +25,10 @@ const setActiveNavButton = (button) => {
   }
 };
 
-// when a navigation button is clicked, reset all styles and set the style of the clicked button
+// interaction with the buttons
 navButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    resetNavButtons(); // reset the style of all navigation buttons
-    setActiveNavButton(button); // set the style of the clicked navigation button
+    resetNavButtons();
+    setActiveNavButton(button);
   });
 });
