@@ -618,6 +618,26 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-\[10px\] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-2\.5 {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -886,13 +906,11 @@ video {
 }
 
 .text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 15px;
 }
 
 .text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 19px;
 }
 
 .text-sm {
@@ -901,8 +919,7 @@ video {
 }
 
 .text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 20px;
 }
 
 .font-bold {
@@ -972,8 +989,15 @@ video {
   border-color: rgb(47 51 54 / var(--tw-border-opacity));
 }
 
+.tweet-username {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
 .tweet-text {
   padding-right: 1.25rem;
+  font-size: 15px;
   line-height: 1.25;
   --tw-text-opacity: 1;
   color: rgb(225 232 237 / var(--tw-text-opacity));
@@ -991,8 +1015,7 @@ video {
 .trends-button-list {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 15px;
   font-weight: 700;
   line-height: 1;
   --tw-text-opacity: 1;
@@ -1001,16 +1024,14 @@ video {
 
 .trending {
   padding-top: 0.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 13px;
   --tw-text-opacity: 1;
   color: rgb(110 118 125 / var(--tw-text-opacity));
 }
 
 .tweet-counter {
   padding-bottom: 0.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 15px;
   --tw-text-opacity: 1;
   color: rgb(110 118 125 / var(--tw-text-opacity));
 }

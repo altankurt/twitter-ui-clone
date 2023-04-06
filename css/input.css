@@ -29,8 +29,12 @@
     @apply flex border-b-2 border-borderColor;
   }
 
+  .tweet-username {
+    @apply flex items-center text-base;
+  }
+
   .tweet-text {
-    @apply pr-5 leading-tight text-textColor;
+    @apply pr-5 text-base leading-tight text-textColor;
   }
 
   .reaction-icons {
@@ -42,11 +46,11 @@
   }
 
   .trending {
-    @apply pt-1 text-sm text-lightGray;
+    @apply pt-1 text-xs text-lightGray;
   }
 
   .tweet-counter {
-    @apply pb-1 text-sm text-lightGray;
+    @apply pb-1 text-base text-lightGray;
   }
 
   /* For Webkit-based browsers (Chrome, Safari and Opera) */

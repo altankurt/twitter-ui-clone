@@ -3,6 +3,17 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        mainFont: ["Roboto", "sans-serif"],
+      },
+
+      fontSize: {
+        xs: "13px",
+        base: "15px",
+        lg: "19px",
+        xl: "20px",
+      },
+
       colors: {
         brandColor: "#1DA1F2",
         brandHoverColor: "#1A91DA",
@@ -12,10 +23,6 @@ module.exports = {
         lightGray: "#6E767D",
         darkGray: "#2D3741",
         iconHoverColor: "#162D40",
-      },
-
-      fontFamily: {
-        mainFont: ["Roboto", "sans-serif"],
       },
     },
   },
