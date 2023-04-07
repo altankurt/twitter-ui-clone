@@ -49,6 +49,7 @@ This project developed with Vanilla JS and styled with Tailwindcss.
 # Contact
 
 Mail to: [aaltankurt@gmail.com](aaltankurt@gmail.com)
+<br/>
 Project Link: [https://github.com/altankurt/twitter-clone-js](https://github.com/altankurt/twitter-clone-js)
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
