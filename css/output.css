@@ -847,6 +847,11 @@ video {
   padding-right: 0.25rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -951,8 +956,6 @@ video {
 }
 
 .profile-pic {
-  margin-left: 0.75rem;
-  margin-top: 0.5rem;
   height: 3rem;
   max-width: 48px;
 }
@@ -971,7 +974,6 @@ video {
 }
 
 .tweet-text {
-  padding-right: 1.25rem;
   font-size: 15px;
   line-height: 1.25;
   --tw-text-opacity: 1;

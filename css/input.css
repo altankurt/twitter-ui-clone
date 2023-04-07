@@ -22,7 +22,7 @@
   }
 
   .profile-pic {
-    @apply ml-3 mt-2 h-12 max-w-[48px];
+    @apply h-12 max-w-[48px];
   }
 
   .timeline-border {
@@ -34,7 +34,7 @@
   }
 
   .tweet-text {
-    @apply pr-5 text-base leading-tight text-textColor;
+    @apply text-base leading-tight text-textColor;
   }
 
   .reaction-icons {
