@@ -3,7 +3,7 @@ const tweetList = document.getElementById("tweetList");
 
 function getTweets() {
   tweets.map((tweet) => {
-    tweetList.innerHTML += `<li class="timeline-border py-3">
+    tweetList.innerHTML += `<li class="timeline-border py-3 px-4">
     <!-- profile-pic -->
     <figure class="profile-pic">
       <img
@@ -38,7 +38,7 @@ function getTweets() {
         </p>
       </div>
       <!-- tweet-pic -->
-      <figure class="pt-3 pr-5">
+      <figure class="pt-3">
         <a href="#">
           <img
             class="max-h-72 w-full object-cover"
