@@ -13,7 +13,7 @@ function getTweets() {
       />
     </figure>
     <!-- tweet-area -->
-    <div class="ml-3 mt-2">
+    <div class="ml-3 mt-2 w-full">
       <!-- user-name -->
       <div class="tweet-username">
         <div class="font-bold text-textColor">
@@ -41,7 +41,7 @@ function getTweets() {
       <figure class="pt-3">
         <a href="#">
           <img
-            class="max-h-72 w-full object-cover"
+            class="max-h-72 w-full object-cover rounded-2xl"
             src="${tweet.image}"
             alt=""
           />
